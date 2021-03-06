@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screen/home_screen.dart';
 
 void main(){
   runApp(
@@ -11,51 +12,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: HomeScreen(),
-          );
+         );
         }
 
       }
 
-      class HomeScreen extends StatefulWidget {
-        HomeScreen({Key key}) : super(key: key);
-
-        @override
-        _HomeScreenState createState() => _HomeScreenState();
-      }
-
-      class _HomeScreenState extends State<HomeScreen> {
-        @override
-        Widget build(BuildContext context) {
-          return Container(
-             child: Scaffold(
-      drawer: Drawer(
-        child: Center(
-          child: Text("Hello drawer"),
-        ),
-      ),
-      appBar: AppBar(
-        title: Text("my first project"),
-      ),
-      body: Center(
-        child: Text("Hello world"),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: "home",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.phone),
-            label: "phone",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.star),
-            label: "star",
-          )
-        ],
-      ),
-    ),
-          );
-        }
-      }
+      
